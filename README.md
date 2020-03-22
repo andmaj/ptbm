@@ -50,6 +50,7 @@ Converting the multicast tree from its textual form (brackets and numbers) to it
 Command to execute:
 
 ```--brackets "()((()())()())((()()())())(())((()(()()()))())" --numbers 2,3,4,5,6,7,8,9,0,0,1,2,10,11,12,1,0,2,3,4,5,6,1 --generate```
+
 Result:
 
 ```0000000000000000000000000000000000000000000000000000000000000000000000000000000000010110010101000011001000000001110010111010001000010000000010011000011101100101010000110010000000000000000000000000000000000000000010001010110111001100100101011100101001011101```
@@ -61,6 +62,7 @@ Converting the multicast tree from its its binary form to its textual form (brac
 Command to execute:
 
 ```--input --virtual 1 --print```
+
 Note: you have to enter binary from the console or redirect STDIN
 
 Result:
