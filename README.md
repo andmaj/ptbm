@@ -107,6 +107,20 @@ To clean:
 make clean
 ```
 
+## Emscripten
+
+Copy ptbm folder to the Emscripten folder.
+
+```
+emcc --bind -Iptbm ptbm/ptbm-emscripten.cpp -o ptbm.js
+```
+
+Upload ptbm.js, ptbm.wasm and ptbm/ptbm.html to a directory of a web server.
+
+Note: application/wasm mime type must be set on the server! 
+
+Live demo: https://majdan.hu/ptbm/ptbm.html
+
 ## Author
 
 Written by Andras Majdan.
