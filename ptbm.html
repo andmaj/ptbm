@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>PTBM</title>
+</head>
+<body>
+<h1>PTBM</h1>
+<script>
+function textFromBitset() {
+  document.getElementById("ptbm_text").value =
+    Module.ptbm_em_textFromBitset(document.getElementById("ptbm_bitset").value);
+}
+function bitsetFromText() {
+  document.getElementById("ptbm_bitset").value =
+    Module.ptbm_em_bitsetFromText(document.getElementById("ptbm_text").value);
+}
+function processBitset() {
+  document.getElementById("ptbm_result").value =
+    Module.ptbm_em_processBitset(document.getElementById("ptbm_header").value, document.getElementById("ptbm_virtual").value);
+}
+function processText() {
+  document.getElementById("ptbm_result").value =
+    Module.ptbm_em_processText(document.getElementById("ptbm_header").value, document.getElementById("ptbm_virtual").value);
+}
+</script>
+<p>Parentheses Tree Based Multicast header processor</p>
+<p>Text from bitset / Bitset from text</p>
+<p> 
+  Text:<br /> 
+  <input type="text" id="ptbm_text" size="50"><br />
+  Bitset:<br /> 
+  <input type="text" id="ptbm_bitset" size="50"> 
+  <p><button onclick="textFromBitset()">Text from bitset</button> <button onclick="bitsetFromText()">Bitset from text</button>  </p>
+</p>
+<p>Process header</p>
+<p> 
+  Header:<br> 
+  <input type="text" id="ptbm_header" size="50"><br /> 
+  Virtual port numbers:<br>
+  <input type="text" id="ptbm_virtual"><br /> 
+  Result:<br> 
+  <textarea id="ptbm_result" rows="6" cols="50"></textarea> <br /> 
+  <p><button onclick="processBitset()">Process bitset</button> <button onclick="processText()">Process text</button></p> 
+</p>
+<script src="ptbm.js"></script>
+</body>
+</html>

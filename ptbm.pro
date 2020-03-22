@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+  ptbm-emscripten.cpp \
   ptbm.cpp
 
 HEADERS += \
