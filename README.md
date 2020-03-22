@@ -109,7 +109,7 @@ make clean
 
 ## Emscripten
 
-Copy ptbm folder to the Emscripten folder.
+Copy ptbm folder to the Emscripten folder. Then run:
 
 ```
 emcc --bind -Iptbm ptbm/ptbm-emscripten.cpp -o ptbm.js
