@@ -32,12 +32,14 @@ Command to execute:
 ```./ptbm --brackets "()((()())()())((()()())())(())((()(()()()))())" --numbers 2,3,4,5,6,7,8,9,0,0,1,2,10,11,12,1,0,2,3,4,5,6,1 --virtual 1```
 
 Result:
-```2 *
+```
+2 *
 3 (()())()() 4,5,6,7,8
 9 (()()())() 0,0,1,2,10
 11 () 12
 32 ()(()()()) 2,3,4,5,6
-33 *```
+33 *
+```
 
 ### Scenerio 2
 
@@ -67,12 +69,14 @@ Simulate processing of the header in its binary form.
 Note: you have to enter binary from the console or redirect STDIN
 
 Result:
-```2 *
+```
+2 *
 3 (()())()() 4,5,6,7,8
 9 (()()())() 0,0,1,2,10
 11 () 12
 32 ()(()()()) 2,3,4,5,6
-33 *```
+33 *
+```
 
 ## Build
 Program should build on any UNIX like or Windows operation system with a standard C++11 compiler, qmake and make utility.
